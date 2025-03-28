@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Demo"/>
+
+            <Button
+                android:id="@+id/btn_osm_bright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OSM Bright"/>
+
+            <Button
+                android:id="@+id/btn_Positron"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Positron"/>
+
+            <Button
+                android:id="@+id/btn_Dark_Matter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Dark Matter"/>
+
+            <Button
+                android:id="@+id/btn_MapTiler_Basic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="MapTiler Basic"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <org.maplibre.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -24,28 +23,28 @@
                 android:text="Demo"/>
 
             <Button
-                android:id="@+id/btn_osm_bright"
+                android:id="@+id/btn_street"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OSM Bright"/>
+                android:text="Street"/>
 
             <Button
-                android:id="@+id/btn_Positron"
+                android:id="@+id/btn_aquarelle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Positron"/>
+                android:text="Aquarelle"/>
 
             <Button
-                android:id="@+id/btn_Dark_Matter"
+                android:id="@+id/btn_satellite"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Dark Matter"/>
+                android:text="Satellite"/>
 
             <Button
-                android:id="@+id/btn_MapTiler_Basic"
+                android:id="@+id/btn_street_map"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="MapTiler Basic"/>
+                android:text="Street map"/>
 
         </LinearLayout>
 
@@ -53,7 +52,7 @@
 
     <org.maplibre.android.maps.MapView
         android:id="@+id/mapView"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
